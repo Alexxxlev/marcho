@@ -8,16 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  min-height: 100vh;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 24px;
-  color: #373a39;
-}
-
 a[class] {
   text-decoration: none;
 }
@@ -35,8 +25,8 @@ h4,
 h5,
 h6,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
