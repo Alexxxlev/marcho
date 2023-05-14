@@ -20,7 +20,7 @@
   }
 
   &__list-link {
-    padding-bottom: 5px;
+    padding: 0 2px 5px;
     border-bottom: 1px solid transparent;
     @extend %roboto-400;
     color: $title;
@@ -29,7 +29,7 @@
 
     &:hover {
       border-bottom: 1px solid $accent;
-      font-family: 'Roboto-Bold', sans-serif;
+      @extend %roboto-700;
       color: $accent;
     }
   }
