@@ -35,3 +35,11 @@ $bg: #f6f6f6;
   text-transform: uppercase;
   cursor: pointer;
 }
+
+//fancybox fix error
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
