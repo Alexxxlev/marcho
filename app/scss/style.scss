@@ -568,6 +568,72 @@
   margin: 0 auto;
 }
 
+.promo {
+  padding: 150px 0 160px;
+  background-image: url('../images/promo-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+
+  &__inner {
+    margin-left: auto;
+    max-width: 570px;
+    width: 100%;
+  }
+
+  &__subtitle {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: $accent;
+    text-transform: uppercase;
+  }
+
+  &__clock {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__clock-item {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $white;
+    border-radius: 50%;
+    text-align: center;
+
+    span {
+      margin: 11px 0 8px;
+      @extend %roboto-700;
+      font-size: 48px;
+      color: $title;
+    }
+  }
+
+  &__link {
+    margin-top: 55px;
+    padding: 12px 27px;
+    display: inline-block;
+    color: $title;
+    text-transform: uppercase;
+    border: 1px solid $accent;
+  }
+}
+
+.partners {
+  padding-top: 75px;
+
+  &__list {
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 
 
 
