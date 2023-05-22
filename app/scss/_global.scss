@@ -24,6 +24,10 @@ a {
   max-width: 1200px;
 }
 
+.header--404-page {
+  background-color: $bg;
+}
+
 .main {
   flex-grow: 1;
 }
