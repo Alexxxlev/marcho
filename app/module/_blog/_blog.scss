@@ -1,0 +1,111 @@
+.blog {
+  padding: 50px 0 160px;
+  background-image: url('../images/blog-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 126px;
+      height: 53px;
+      background-image: url('../images/decor/blog-decor.svg');
+      position: absolute;
+      top: -25px;
+      right: -20px;
+      z-index: -1;
+    }
+  }
+
+  &__item {
+    max-width: 370px;
+    box-shadow: transparent;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+
+    &:hover {
+      box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35);
+      border: 1px solid transparent;
+
+      .blog__item-link {
+        color: $accent;
+
+        &::after {
+          background-image: url('../images/icons/arrow-accent.svg');
+        }
+      }
+    }
+  }
+
+  &__item-imglink {
+    display: block;
+
+    img {
+      height: 280px;
+      object-fit: cover;
+    }
+  }
+
+  &__item-box {
+    padding: 30px 40px;
+  }
+
+  &__item-title {
+    margin-bottom: 20px;
+    @extend %roboto-400;
+    font-size: 22px;
+    line-height: 32px;
+    color: $title;
+  }
+
+  &__item-link {
+    padding-right: 25px;
+    position: relative;
+    transition: all .3s;
+
+    &::after {
+      content: '';
+      width: 10px;
+      height: 8px;
+      background-image: url('../images/icons/arrow.svg');
+      position: absolute;
+      top: 7px;
+      right: 9px;
+    }
+  }
+}
+
+.blog-box {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+
+  &__author,
+  &__date {
+    padding-left: 30px;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 4px;
+      left: 0;
+    }
+  }
+
+  &__author::before {
+    background-image: url('../images/icons/user-grey.svg');
+  }
+
+  &__date::before {
+    background-image: url('../images/icons/time.svg');
+  }
+}

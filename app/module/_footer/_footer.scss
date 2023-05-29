@@ -1,0 +1,105 @@
+.footer {
+  background-color: $bg;
+}
+
+.footer-top {
+  padding: 70px 0 40px;
+  display: flex;
+  border-bottom: 1px solid #ececec;
+
+  &__contact {
+    margin-right: 30px;
+    width: 250px;
+  }
+
+  &__nav {
+    margin-right: 40px;
+    width: 170px;
+  }
+
+  &__item-from {
+    max-width: 470px;
+  }
+
+  &__logo {
+    margin-bottom: 30px;
+    display: block;
+  }
+
+  &__address,
+  &__email,
+  &__phone {
+    margin-bottom: 14px;
+    display: block;
+  }
+
+  &__social-list {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+  }
+
+  &__social-link {
+    path {
+      fill: $default;
+      transition: all .3s;
+    }
+
+    &:hover {
+      path {
+        fill: $accent;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 39px;
+    @extend %roboto-400;
+    font-size: 22px;
+    line-height: 1;
+    color: $title;
+  }
+
+  &__link {
+    margin-bottom: 14px;
+    display: block;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+  }
+
+  &__form-input {
+    padding: 12px 10px 12px 15px;
+    max-width: 320px;
+    width: 100%;
+    background-color: $white;
+    border: none;
+    box-shadow: 0px 7px 20px 0px rgba(192, 192, 192, 0.3);
+
+    &::placeholder {
+      font-size: 16px;
+      color: $default;
+    }
+  }
+
+  &__form-btn {
+    margin-left: 10px;
+    @extend %btn;
+  }
+}
+
+.footer-bottom {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+
+  &__accept {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+}
