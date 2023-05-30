@@ -1,4 +1,18 @@
 $(function () {
+  // filter btn
+  $(".shop__filter-btn").on("click", function () {
+    $(".shop__filters").slideToggle();
+  });
+
+  // бургер меню
+  $(".menu__btn").on("click", function () {
+    $(".menu__list").toggleClass("menu__list--active");
+  });
+  $(".footer-top__title").on("click", function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass("active");
+  });
+
   // табы on page product
   $(".product-tabs__top-item").on("click", function (e) {
     e.preventDefault();
@@ -35,6 +49,14 @@ $(function () {
     draggable: false,
     arrows: false,
     fade: true,
+    responsive: [
+      {
+        breakpoint: 1051,
+        settings: {
+          draggable: true,
+        },
+      },
+    ],
   });
 
   // смена сетки на странице shop (грид/лист)
@@ -48,11 +70,13 @@ $(function () {
   $(".button-list").on("click", function () {
     $(".product-item").addClass("product-item--list");
     $(".pagination").addClass("pagination--list");
+    $(".shop-content__inner").addClass("shop-content__nogrid");
   });
 
   $(".button-grid").on("click", function () {
     $(".product-item").removeClass("product-item--list");
     $(".pagination").removeClass("pagination--list");
+    $(".shop-content__inner").removeClass("shop-content__nogrid");
   });
 
   //Form Style плагин для стилизации select, input(number)

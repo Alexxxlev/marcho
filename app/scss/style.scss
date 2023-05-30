@@ -4,12 +4,6 @@
 @import 'libs';
 @import 'global';
 
-
-
-
-
-
-
 .page-404 {
   &__inner {
     padding: 110px 0 120px;
@@ -28,6 +22,7 @@
     margin-bottom: 40px;
     @extend %roboto-700;
     font-size: 48px;
+    line-height: 52px;
     color: #28384f;
   }
 
@@ -47,6 +42,10 @@
 
   &__inner {
     display: flex;
+  }
+
+  &__filter-btn {
+    display: none;
   }
 
   &__filters {
@@ -760,7 +759,7 @@
   }
 
   &__content-star {
-    margin: 0;
+    margin: 5px 0 0;
   }
 
   &__content-text {
@@ -907,6 +906,18 @@
     width: 770px;
   }
 
+  &__popup {
+    max-width: 770px;
+    height: 450px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
   &__aside {
     width: 370px;
   }
@@ -922,20 +933,6 @@
     &.blog-page__item--slider {
       .blog-page__item-box {
         margin-top: -8px;
-      }
-    }
-
-    &.blog-page__item--video {
-      .blog-page__popup {
-        max-width: 770px;
-        height: 450px;
-        object-fit: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
       }
     }
   }
@@ -1208,6 +1205,8 @@
     margin: 25px 20px 35px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
   }
 
   &__tags,
@@ -1358,10 +1357,6 @@
   &__form-box {
     display: flex;
     justify-content: space-between;
-
-    input {
-      width: 330px;
-    }
   }
 
   &__form-input,
@@ -1375,6 +1370,7 @@
   }
 
   &__form-input {
+    width: 330px;
     height: 60px;
   }
 
