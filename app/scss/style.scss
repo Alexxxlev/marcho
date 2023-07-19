@@ -925,6 +925,10 @@
   &__item {
     margin-bottom: 60px;
 
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     &.blog-page__item--noimage {
       border-top: 1px solid #ececec;
       box-shadow: 0px 20px 60px 0px rgba(202, 202, 202, 0.35);

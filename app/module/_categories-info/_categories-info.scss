@@ -51,6 +51,24 @@
     box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35);
   }
 
+  &__item-imgbox {
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+  }
+
+  &__item-imgbox--orange {
+    background-color: #ffb534;
+  }
+
+  &__item-imgbox--blue {
+    background-color: #34c3ff;
+  }
+
+  &__item-imgbox--red {
+    background-color: #fe3e57;
+  }
+
   &__item-title {
     margin: 30px 0 10px;
     @extend %roboto-400;
@@ -79,7 +97,7 @@
 
       .categories__item-subtitle,
       .categories__link:hover {
-        color: #620fe5;
+        color: $accent;
       }
     }
 
@@ -92,7 +110,7 @@
 
       .categories__item-subtitle,
       .categories__link:hover {
-        color: $accent;
+        color: #34c3ff;
       }
     }
 
@@ -108,7 +126,7 @@
 
       .categories__item-subtitle,
       .categories__link:hover {
-        color: #34c3ff;
+        color: #620fe5;
       }
     }
   }
@@ -117,6 +135,7 @@
     margin-bottom: 15px;
     font-size: 22px;
     color: $title;
+    letter-spacing: -.2px;
   }
 
   &__item-subtitle {
@@ -218,6 +237,7 @@
       &:nth-child(2) {
         background-color: #d7efef;
       }
+
       &:nth-child(3) {
         background-color: #fff6a7;
       }
